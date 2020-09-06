@@ -22,3 +22,11 @@ Changes the frames of the screen as the ball moves ahead
 
   Then the user interface changes at a rate of 30 frames per second
   and the ball moves in the decided direction with the decided velocity
+
+### Scenario: when ball collides on wall
+
+  Given that the game is bug free
+
+  When the pong ball hits either side of the wall
+
+  Then the user interface is reset and a new set starts
