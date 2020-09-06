@@ -2,7 +2,7 @@
 
 ## Feature
 
-This page opens up when someone taps on the game icon. 
+This page opens up when someone taps on the game icon.
 
 ## Acceptance Criteria
 
