@@ -13,7 +13,7 @@ This page helps in setting up the game in accordance to single or double player 
   When player enters his name and press start button
 
   Then the system assigns other player as computer
-  and the game starts and the update-ui module is invoked
+  and the game starts and the "update ui" module is invoked
 
 ### Scenario: Double player mode is selected
 
@@ -21,4 +21,4 @@ This page helps in setting up the game in accordance to single or double player 
 
   When player A and player B enter their names and press start button
 
-  Then the game starts and update-ui module is invoked
+  Then the game starts and "update ui" module is invoked
