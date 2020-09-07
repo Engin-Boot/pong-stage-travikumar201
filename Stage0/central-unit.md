@@ -25,7 +25,7 @@ game execution
   Then keep checking for a collision every 10 milliseconds with either
   wall or paddles of players
 
-### Scenario: the check collision interface returns data
+### Scenario: collision with wall
 
   Given that the check collision interface is returning data properly
   
@@ -33,7 +33,7 @@ game execution
 
   Then point capturing module is called
 
-### Scenario: the check collision interface returns data
+### Scenario: collision with paddle
 
   Given that the check collision interface is returning data properly
 
@@ -48,3 +48,11 @@ game execution
   When the changed velocity and direction data is received by the module
 
   Then the module for updating interface is called with new details
+
+### Scenario: game ends
+
+  Given that either player A or player has earned 10 points
+
+  When the point capture module returns winner data
+
+  Then the module to end game is called
