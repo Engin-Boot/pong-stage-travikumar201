@@ -2,7 +2,7 @@
 
 ## Feature
 
-This module co-ordinates between all the modules for sucessful
+This module co-ordinates between all the modules for successful
 game execution
 
 ## Acceptance Criteria
