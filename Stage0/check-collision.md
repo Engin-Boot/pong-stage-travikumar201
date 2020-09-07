@@ -1,4 +1,4 @@
-# check for collison on paddle or wall
+# check for collision on paddle or wall
 
 ## Feature
 
