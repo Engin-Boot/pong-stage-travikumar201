@@ -2,7 +2,7 @@
 
 ## Feature
 
-Adds ppoints to players existing score
+Add points to players existing score
 
 ## Acceptance Criteria
 
