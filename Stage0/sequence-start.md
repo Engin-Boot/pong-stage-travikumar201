@@ -43,7 +43,8 @@
     central-unit->>+check-collision: collision detected with side walls
     check-collision->>-central-unit: returns data
     central-unit->>+capture-points: the score of winning player is increased by one
-    capture-points->>+capture-points: either player A or player B reaches 10 points first
+    capture-points->>+capture-points: either player A or player B reaches 10
+    points first
     capture-points->>-central-unit: returns data
     central-unit->>+game-ends: ask for replay or quitting the game
     game-ends->>+home: if player chooses to quit  
