@@ -12,7 +12,7 @@ This page opens up when someone taps on the game icon.
 
   When someone changes the background theme of the game
 
-  Then this theme is applied for rest of the games until changed again
+  Then this module redirects to game-setup module
 
 ### Scenario: choose number of players
 

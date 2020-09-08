@@ -6,6 +6,23 @@ This page helps in setting up the game in accordance to single or double player 
 
 ## Acceptance Criteria
 
+### Scenario: Change theme locally
+
+  Given that themes are available locally
+
+  When player chooses a particular theme
+
+  Then apply that theme in the game
+
+### Scenario: Download theme from the internet
+
+  Given that theme is not available locally
+
+  When player chooses a particular theme
+
+  Then ask user to pay the required amount
+  and apply the theme in the game
+
 ### Scenario: Single player mode is selected
 
   Given that single player mode is selected

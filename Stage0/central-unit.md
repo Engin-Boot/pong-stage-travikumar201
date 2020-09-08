@@ -25,11 +25,11 @@ game execution
   Then keep checking for a collision every 10 milliseconds with either
   wall or paddles of players
 
-### Scenario: collision with wall
+### Scenario: collision with  side walls
 
   Given that the check collision interface is returning data properly
   
-  When the collision is with the wall
+  When the collision is with the left or right side wall
 
   Then point capturing module is called
 

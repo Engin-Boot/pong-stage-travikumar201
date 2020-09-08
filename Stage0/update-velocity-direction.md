@@ -15,4 +15,13 @@ direction in which the ball will move
 
   Then calculate the updated velocity and direction with which the
   ball will now progress and return the data to the central module
+
+### Scenario: the ball hits either top or bottom wall
+
+  Given that the game is in progress and the pong ball is moving
+
+  When the pong ball hits the top or bottom wall
+
+  Then calculate the updated velocity and direction with which the
+  ball will now progress and return the data to the central module
   
