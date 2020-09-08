@@ -15,8 +15,36 @@
 
 ## Movement Initiation
 
--describe-how-modules-interact-to-make-the-ball-move
+    update-ui->>+central-unit: returns back every 100 milliseconds
+    central-unit->>+check-collision: calls every 100 milliseconds
+    check-collision->>-central-unit: no collision detected
+    central-unit->>+update-ui: move the pong ball in the decided direction
+    and with decided speed
+    update-ui->>-central-unit: returns after 100 milliseconds
+    central-unit->>+check-collision: call to check collision
+    check-collision->>-central-unit: collision with upper or lower wall
+    central-unit->>+update-velocity-direction: updates the direction and velocity
+    for the movement of pong ball
+    update-velocity-direction->>-central-unit: returns updated velocity and direction
+    central-unit->>+update-ui: move the pong ball in the decided direction and
+    with decided speed
+    update-ui->>-central-unit: returns after 100 milliseconds
+    central-unit->>+check-collision: call to check collision
+    check-collision->>-central-unit: collision with the paddle of players
+    central-unit->>+update-velocity-direction: updates the direction and velocity
+    for the movement of pong ball
+    update-velocity-direction->>-central-unit: returns updated velocity and direction
+    central-unit->>+update-ui: move the pong ball in the decided direction and with
+    decided speed
+    update-ui->>-central-unit: returns after 100 milliseconds
 
 ## One score
 
--describe-how-the-modules-interact-to-record-scores
+    central-unit->>+check-collision: collision detected with side walls
+    check-collision->>-central-unit: returns data
+    central-unit->>+capture-points: the score of winning player is increased by one
+    capture-points->>+capture-points: either player A or player B reaches 10 points first
+    capture-points->>-central-unit: returns data
+    central-unit->>+game-ends: ask for replay or quitting the game
+    game-ends->>+home: if player chooses to quit  
+    game-ends->>-central-unit: if player chooses to replay

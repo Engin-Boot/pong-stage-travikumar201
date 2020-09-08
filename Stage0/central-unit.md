@@ -18,11 +18,11 @@ game execution
 
 ### Scenario: checking for collision
 
-  Given the interface is updated every 10 milliseconds
+  Given the interface is updated every 100 milliseconds
 
   When the pong ball is progressing in its calculated direction
 
-  Then keep checking for a collision every 10 milliseconds with either
+  Then keep checking for a collision every 100 milliseconds with either
   wall or paddles of players
 
 ### Scenario: collision with  side walls
